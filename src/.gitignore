@@ -1,21 +1,37 @@
+# Operating System Files
 .DS_Store
+Thumbs.db
 
+# CodeIgniter Cache and Logs
 application/cache/*
 !application/cache/index.html
 
 application/logs/*
 !application/logs/index.html
 
+# Allow .htaccess files
 !application/*/.htaccess
 
+# Composer
 composer.lock
+/vendor/
+
+# SQLite test database
 tests/mocks/database/ci_test.sqlite
 
+# User Guide Build Files
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
-/vendor/
+
+# Docker-Specific Files
+docker-compose.override.yml
+.env
+docker-data/
+.docker/
+*.log
+*.pid
 
 # IDE Files
 #-------------------------
@@ -28,5 +44,12 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
+# Tests and Results
 /tests/tests/
 /tests/results/
+
+# Temporary Files
+*.bak
+*.swp
+*.tmp
