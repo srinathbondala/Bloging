@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             height:95vh;
         }
         .right {
-            background-color: green;
+            background-color:#383896;
             padding: 20px;
             color: white;
             overflow: auto;
@@ -27,14 +27,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         .right::-webkit-scrollbar, .left::-webkit-scrollbar {
             display: none;
         }
+        
+        form input, textarea, label{
+            font-size: large !important;
+        }
+
+        p.truncated {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5;
+        }
+
     </style>
 </head>
 <body>
     <div class="container-fluid">
-        
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7 left">
-                <div class="container mt-5 card" style=" padding: 20px;">
+                <!-- <img src="../../assets/back-icon-vector.jpg" alt="<" class="back_btn" onclick="history.back()"> -->
+                <?php include_once APPPATH . 'views/utility_views/back.php'; ?>
+                <div class="container mt-1 p-4 card">
                     <h2 class="mb-4" style="color:black; text-align:center;">Add a New Blog</h2>
                     <hr>
                     <form action="/add" method="POST" enctype="multipart/form-data">
@@ -50,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <label for="image" class="form-label">Upload Blog Image</label>
                             <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width:100%">Post Blog</button>
+                        <button type="submit" class="btn btn-primary" style="width:100%; font-size: large !important;">Post Blog</button>
                     </form>
                 </div>
             </div>
@@ -58,13 +73,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <h2>Explore Blogs</h2>
                     <div class="row">
-                        <?php for($i = 0; $i < 40; $i++) { ?>
+                        <?php foreach ($blogs as $x) { ?>
                             <div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-4">
                                 <div class="card" style="width: 100%;">
                                     <img src="https://via.placeholder.com/150" class="card-img-top" alt="Placeholder Image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title"><?echo htmlspecialchars($x['title']) ?></h5>
+                                        <p class="card-text truncated"><?echo htmlspecialchars($x['content'])?></p>
                                         <a href="#" class="btn btn-primary">View Complete</a>
                                     </div>
                                 </div>
@@ -76,5 +91,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <br>
+    <?php echo "<script>console.log(" . json_encode($blogs) . ");</script>"; ?>
 </body>
 </html>

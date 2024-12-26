@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </style>
 </head>
 <body>
-
+<?php include_once APPPATH . 'views/utility_views/back.php'; ?>
 <!-- About Page Header -->
 <section class="about-header">
     <div class="container">

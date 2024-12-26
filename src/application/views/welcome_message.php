@@ -124,6 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		.custom-card:hover {
 			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
 		}
 
 		.custom-card {
@@ -179,7 +180,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		</div>
 		<div class="carousel-item">
-		<img src="https://i.ytimg.com/vi/GjSH2TMctnU/maxresdefault.jpg" class="d-block w-100" alt="...">
+		<img src="https://www.blogtyrant.com/wp-content/uploads/2019/07/draft-a-post.jpg" class="d-block w-100" alt="...">
 		<div class="carousel-caption d-none d-md-block">
 			<h5>Third Slide</h5>
 			<p>Some representative placeholder content.</p>
@@ -211,7 +212,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="row item-align">
 						<div class="col-md-4 post center">
 							<div class="card custom-card" style="width: 22rem;">
-								<img src="https://via.placeholder.com/300x200?text=Create+Your+Blog" class="card-img-top" alt="Create Your Blog">
+								<img src="https://cdn.wegic.ai/cms/seo/img/what-is-a-blog/29AB4FA6.webp?format=webp&args=pr:sharp/q:60" class="card-img-top" alt="Create Your Blog">
 								<div class="card-body">
 									<h5 class="card-title">Create Your Blog</h5>
 									<p class="card-text">Learn how to start your own blog, from setting up to launching with easy-to-follow guides.</p>
@@ -222,7 +223,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<div class="col-md-4 post center">
 							<div class="card custom-card" style="width: 22rem;">
-								<img src="https://via.placeholder.com/300x200?text=Explore+Ideas" class="card-img-top" alt="Explore Ideas">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTurr8wxTJMSg-oMKStXb77WU2cjNJxjeJh0w&s" class="card-img-top" alt="Explore Ideas">
 								<div class="card-body">
 									<h5 class="card-title">Explore New Ideas</h5>
 									<p class="card-text">Find fresh blog topics and tips for engaging content that resonates with your audience.</p>
@@ -233,7 +234,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<div class="col-md-4 post center">
 							<div class="card custom-card" style="width: 22rem;">
-								<img src="https://via.placeholder.com/300x200?text=Blog+Tips" class="card-img-top" alt="Blog Tips">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQao79FnoZunvjPy-p20X2Dwc0M87HKTsLZA&s" class="card-img-top" alt="Blog Tips">
 								<div class="card-body">
 									<h5 class="card-title">Blogging Tips</h5>
 									<p class="card-text">Learn the best practices and tips to grow your blog, increase traffic, and build a loyal audience.</p>
@@ -262,17 +263,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h2 class="text-center">Trending Blogs</h2>
 		<div class="row" style="margin-top: 15px;">
 			<div class="col-md-4 post">
-				<img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Post 1">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjno2FnNIRUF9F4TcPBBOHb1T8ud7YuqiWXQ&s" class="img-fluid" alt="Post 1">
 				<h3><a href="/post-url">How to Start a Blog in 2024</a></h3>
 				<p>A complete guide to creating a successful blog from scratch.</p>
 			</div>
 			<div class="col-md-4 post">
-				<img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Post 2">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKo1NeSbAWIUI3VZgz_GXgQDhAqc0_1g0eTw&s" class="img-fluid" alt="Post 2">
 				<h3><a href="/post-url">SEO Tips for Beginners</a></h3>
 				<p>Learn how to optimize your blog for better search engine rankings.</p>
 			</div>
 			<div class="col-md-4 post">
-				<img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Post 3">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmp8E2mrZYWhwfBrha7elCw_Rw91KhaRhEA&s" class="img-fluid" alt="Post 3">
 				<h3><a href="/post-url">5 Common Blogging Mistakes</a></h3>
 				<p>Discover the most common mistakes bloggers make and how to avoid them.</p>
 			</div>

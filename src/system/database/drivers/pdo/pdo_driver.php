@@ -59,6 +59,9 @@ class CI_DB_pdo_driver extends CI_DB {
 	 * @var	string
 	 */
 	public $dbdriver = 'pdo';
+	public $compress;
+	public $stricton;
+	public $failover;
 
 	/**
 	 * PDO Options

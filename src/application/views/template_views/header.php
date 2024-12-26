@@ -22,9 +22,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             list-style-type: none;
             gap:5vw;
         }
-        li{
-            
-        }
     </style>
 </head>
 <body>
@@ -35,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <ul class="center options">
                 <li><a href='http://localhost:8000/#contact'>Login</a></li>
                 <li><a href='#'>Sign Up</a></li>
-                <li><a href='#'>Help</a></li>
+                <li><a href='/about'>About</a></li>
             </ul>
         </div>
     </div>

@@ -70,6 +70,9 @@ class CI_Loader {
     public $security;
     public $input;	
     public $lang;
+	public $db;
+	public $blog_lib;
+    public $Blog_model;
 
 	/**
 	 * List of paths to load views from
