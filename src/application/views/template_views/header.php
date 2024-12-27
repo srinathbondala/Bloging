@@ -20,7 +20,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             justify-content:space-around !important;
             padding:1vw;
             list-style-type: none;
-            gap:5vw;
+            gap:2vw;
+        }
+        .options a:link,.options a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 8px;
+        }
+
+        .options a:hover, .options a:active {
+            background-color: red;
         }
     </style>
 </head>
@@ -30,9 +43,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a class="navbar-brand" href="/"><h3>BLOGGING</h3></a>
         <div>
             <ul class="center options">
-                <li><a href='http://localhost:8000/#contact'>Login</a></li>
-                <li><a href='#'>Sign Up</a></li>
-                <li><a href='/about'>About</a></li>
+                <li><a href='/login'>Login</a></li>
+                <li><a href='/signup'>Sign Up</a></li>
+                <?php if(!is_logged_in()){?>
+                    <li><a href='/about'>About</a></li>
+                <?}else{?>
+                    <li><a href='/logout'>Logout</a></li>
+                <?}?>
             </ul>
         </div>
     </div>

@@ -14,5 +14,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         public function getAllPosts(){
             return $this->CI->Blog_model->get_all_posts();
         }
+
+        public function addPost(){
+            return $this->CI->Blog_model->create_post();
+        }
+
+        protected function uploadImage(){
+            
+        }
     }
 ?>

@@ -73,6 +73,9 @@ class CI_Loader {
 	public $db;
 	public $blog_lib;
     public $Blog_model;
+	public $form_validation;
+	public $Auth_model;
+	public $session;
 
 	/**
 	 * List of paths to load views from

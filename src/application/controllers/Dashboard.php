@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashbord extends CI_Controller {
-
+class Dashboard extends Base_Controller {
     public $db;
     public $blog_lib;
     public $Blog_model;
+    public $session;
 
     public function __construct() {
         parent::__construct();
@@ -20,7 +20,7 @@ class Dashbord extends CI_Controller {
             ];
 
             $this->load->view('template_views/header');
-            $this->load->view('dashbord',$data);
+            $this->load->view('dashboard',$data);
             $this->load->view('template_views/footer');
         }
         catch(Exception $e){

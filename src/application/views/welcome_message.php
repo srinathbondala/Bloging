@@ -216,7 +216,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="card-body">
 									<h5 class="card-title">Create Your Blog</h5>
 									<p class="card-text">Learn how to start your own blog, from setting up to launching with easy-to-follow guides.</p>
-									<a href="/dashbord" class="btn btn-primary">Start Creating</a>
+									<a href="/dashboard" class="btn btn-primary">Start Creating</a>
 								</div>
 							</div>
 						</div>
