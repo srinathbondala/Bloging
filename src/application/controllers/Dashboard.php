@@ -24,11 +24,23 @@ class Dashboard extends Base_Controller {
             $this->load->view('template_views/footer');
         }
         catch(Exception $e){
-
             log_message('error', 'Database connection error: ' . $e->getMessage());
             echo "<script>console.log('Error: " . $e->getMessage() . "');</script>";
             show_error('An error occurred while connecting to the database. Please try again later.');
+        }
+    }
 
+    public function explore(){
+        try{
+            $data = ['blogs'=>$this->blog_lib->getAllPosts()];
+            $this->load->view('template_views/header');
+            $this->load->view('explore',$data);
+            $this->load->view('template_views/footer');
+        }
+        catch(Exception $e){
+            log_message('error', 'Database connection error: ' . $e->getMessage());
+            echo "<script>console.log('Error: " . $e->getMessage() . "');</script>";
+            show_error('An error occurred while connecting to the database. Please try again later.');
         }
     }
 } 
