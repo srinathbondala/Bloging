@@ -65,6 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <label for="image" class="form-label">Upload Blog Image</label>
                             <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
                         </div>
+                        <input type="hidden" name="author_id" value="<?= $this->session->userdata('user_id'); ?>">
                         <button type="submit" class="btn btn-primary" style="width:100%; font-size: large !important;">Post Blog</button>
                     </form>
                 </div>

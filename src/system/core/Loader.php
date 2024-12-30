@@ -76,6 +76,8 @@ class CI_Loader {
 	public $form_validation;
 	public $Auth_model;
 	public $session;
+	public $uploadlib;
+	public $upload;
 
 	/**
 	 * List of paths to load views from

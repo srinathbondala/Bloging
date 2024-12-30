@@ -3,12 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Blog_model extends CI_Model {
 
-    public function create_post($title, $content, $author_id) {
+    public function create_post($title, $content, $author_id,$image_link) {
         $data = array(
             'title' => $title,
             'content' => $content,
             'author_id' => $author_id,
-            'created_at' => date('Y-m-d H:i:s')
+            'created_at' => date('Y-m-d H:i:s'),
+            'image_link' => $image_link
         );
 
         if ($this->db->insert('blog_posts', $data)) {

@@ -60,3 +60,5 @@ $route['logout'] = 'Auth/logout';
 $route['signup'] = 'welcome/signup';
 $route['auth/login'] = 'Auth/login';
 $route['auth/signup'] = 'Auth/signup';
+//blog routes
+$route['add'] = 'blog/add';

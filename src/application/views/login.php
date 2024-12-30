@@ -38,7 +38,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary">Login</button>
                 </div>
-
+                <div class="d-grid gap-2" style="text-align:center;">
+                    <p>forgot password?? <a href="/reset">reset here</a></p>
+                    <p>password 123456789</p>
+                </div>
             </form>
         </div>
     </div>

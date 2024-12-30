@@ -43,13 +43,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a class="navbar-brand" href="/"><h3>BLOGGING</h3></a>
         <div>
             <ul class="center options">
-                <li><a href='/login'>Login</a></li>
-                <li><a href='/signup'>Sign Up</a></li>
                 <?php if(!is_logged_in()){?>
-                    <li><a href='/about'>About</a></li>
+                    <li><a href='/login'>Login</a></li>
+                    <li><a href='/signup'>Sign Up</a></li>
                 <?}else{?>
                     <li><a href='/logout'>Logout</a></li>
                 <?}?>
+                <li><a href='/about'>About</a></li>
             </ul>
         </div>
     </div>
